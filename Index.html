@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .i {
+            background-color: rgb(219, 131, 16);
+            background-image: url(lin.gif);
+            background-repeat: no-repeat;
+            border: solid;
+            border-width: 3px;
+            border-color: black;
+            text-indent: 15px;
+
+        }
+
+        .s {
+            background-color: rgb(219, 131, 16);
+            background-image: url(lin.gif);
+            background-repeat: no-repeat;
+            border: solid;
+            border-width: 2px;
+            border-style: outset;
+            border-color: rgb(14, 7, 105);
+            text-indent: 15px;
+        }
+
+        .list {
+            list-style-image: url(lin.gif);
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        p::first-letter {
+            color: red;
+            font-size: 35pt;
+            font-family: serif;
+        }
+
+        /* .l {
+            background-image: url(lin.gif);
+            background-repeat: no-repeat;
+            padding-left: -20px;
+            font-size: 22pt;
+            -webkit-transition: background-image 1s ease-out 1s;
+            transition: background-image 1s ease-out 1s;
+        } */
+
+        .l:hover {
+            background-image: url(lin.gif);
+            background-repeat: no-repeat;
+            padding-left: 20px;
+            font-size: 28pt;
+            -webkit-transition: background-image 5s ease-in-out;
+            transition: ease-in-out;
+            opacity: 25%;
+        }
+
+        .t:hover {
+            background-image: url(lin.gif);
+            background-repeat: no-repeat;
+            background-position: center;
+            font-size: 12pt;
+            padding-top: 50px;
+            vertical-align: -20px;
+            -webkit-transition: background-image 15s ease-in-out;
+            transition-duration: 4s;
+            transition-delay: 2s;
+            opacity: 75%;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <input type="text" class="i" value="123456">
+    </form> <br>
+
+    <form>
+        <input type="submit" class="s" value="отправить">
+    </form> <br>
+    <ul class="list">
+        <li>Text1</li>
+        <li>Text2</li>
+        <li>Text3</li>
+        <li>Text4</li>
+    </ul> <br>
+    <a href="https://tut.by">ссылка</a> <br>
+    <a href="https://tut.by">ссылка</a> <br>
+    <h1>Первый символ параграфа</h1>
+    <p> Текст</p> <br>
+    <a class="l" href="https://tut.by">Текст меню 1</a> <br>
+    <a class="l" href="https://tut.by">Текст меню 2</a> <br>
+    <a class="l" href="https://tut.by">Текст меню 3</a> <br> <br> <br>
+    <div>
+        <a class="t" href="https://tut.by">Текст меню 1</a>
+        <a class="t" href="https://tut.by">Текст меню 2</a>
+        <a class="t" href="https://tut.by">Текст меню 3</a>
+    </div>
+
+
+</body>
+
+</html>
